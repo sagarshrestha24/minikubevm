@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        sagarshrestha24/andriod1: true
         sagarshrestha24/minikubevm: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        sagarshrestha24/andriod1: merge
         sagarshrestha24/minikubevm: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - sagarshrestha24/minikubevm
+        - sagarshrestha24/andriod1
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - sagarshrestha24/minikubevm
+        - sagarshrestha24/andriod1
       target_url: http://lighthouse-jx.192.168.49.2.nip.io/merge/status
 kind: ConfigMap
 metadata:
